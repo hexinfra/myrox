@@ -1,0 +1,1 @@
+After we have implemented full RPC support, we'll implement rpcui as a svc.
