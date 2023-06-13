@@ -120,7 +120,7 @@ func (s *RocksServer) Serve() { // goroutine
 		connID++
 	}
 	s.WaitSubs() // conns. TODO: max timeout?
-	if IsDebug(2) {
+	if Debug() >= 2 {
 		Printf("rocksServer=%s done\n", s.Name())
 	}
 	s.stage.SubDone()
